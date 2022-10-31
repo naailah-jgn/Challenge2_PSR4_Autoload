@@ -1,8 +1,8 @@
 <?php
 
-require_once '../autoload.php';
+require_once '../vendor/autoload.php';
+
 use Greetings\Hello;
 
-Hello::talk();
-$hi = 'Hello';
-$hi::talk();
+$hi = new Hello();
+echo $hi->talk();
